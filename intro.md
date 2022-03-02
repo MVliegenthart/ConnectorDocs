@@ -14,27 +14,38 @@ If you have signed up for a Trial the URL will be 'https://trial.revelationhelpd
 
 ## Get started with your connector
 
-To start using the Revelation helpdesk connector create a new Flow and add an action. Then search for "Revelation helpdesk" and select any of the available actions. 
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Step1 - Choose action.png" align="left"  width="400">  
+<p>To start using the Revelation helpdesk connector create a new Flow and add an action. Then search for "Revelation helpdesk" and select any of the available actions. </p>
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Step1 - Choose action.png"  width="400">
 
-The first step when adding a new action or trigger is to create a connection to your instance of Revelation helpdesk. When prompted, enter your Revelation helpdesk URL and make sure the url does not end with '/'
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Step2 - Connect.png" align="left"  width="400">
+#### Connect to Revelation helpdesk
 
-After you enter your Revelation helpdesk URL click 'Sign In' and you will see a popup login form. Enter your Revelation URL again and your Revelation username and password.
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Step3 - Auth.png" align="left"  width="400">
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Step4 - Login.png" align="left"  width="400">
-
-Once you have signed in successfully you will be able to interact with the chosen action. Here is a simple example of how to log a new ticket  using the 'Log a new Ticket' action
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Step5 - LogATicket.png" align="left"  width="400">
-
-Here is an advanced scenario where we log a new ticket from an email. When a new email arrives it will trigger the flow and use the 'Find a user' action to find the user in Revelation helpdesk by their (FROM) email address. The 'Log a new Ticket' action then logs a ticket to the End User using the output (The User Id) from the previous action. The ticket description will be the subject line of the email and the Client and Project fields can be left blank because these will get set automatically based on the end user of the ticket.
-Next we will use the "Add an Action" action to add a note to the newly logged ticket in the previous step. The 'Ticket Id' is the ID of the ticket logged in the previous step and the Notes are set to be the body of the email.
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Advanced logATicket.png" align="left"  width="400">
-
-The ticket that is logged in Revelation helpdesk will look similar to this
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Step6 - Advanced.png" align="left"  width="400">
+<p>The first step when adding a new action or trigger is to create a connection to your instance of Revelation helpdesk. When prompted, enter your Revelation helpdesk URL and make sure to enter a secure URL (HTTPS://) and the url does not end with '/'</p>
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Step2 - Connect.png"  width="400">
 
 
+<p>After you enter your Revelation helpdesk URL click 'Sign In' and you will see a popup login form. Enter your Revelation URL again and your Revelation username and password.</p>
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Step3 - Auth.png" width="400">
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Step4 - Login.png" width="400">
+
+<p>Once you have signed in successfully you will be able to interact with the chosen action.</p>
+
+#### Log a new Ticket
+Here is a simple example of how to log a new ticket using the 'Log a new Ticket' action. Simply select the Client, Project, End User, enter a Ticket description and choose a ticket status. When the flow runs it will create a new ticket for this end user and assign it to the selected project.</p>
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Step5 - LogATicket.png" width="400">
+
+#### Advanced ticket logging
+<p>Here is an advanced scenario where we log a new ticket from an email. When a new email arrives it will trigger the flow and use the 'Find a user' action to find the user in Revelation helpdesk by the email's FROM address. 
+  
+The 'Log a new Ticket' action then logs a ticket to the End User using the output (The User Id) from the previous step. The ticket description will be the subject line of the email and the Client and Project fields can be left blank because these will get set automatically based on the end user of the ticket.
+  
+Next we will use the "Add an Action" action to add a note to the newly logged ticket in the previous step. The 'Ticket Id' is the ID of the ticket logged in the previous step and the Notes are set to be the body of the email.</p>
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Advanced logATicket.png" width="400">
+
+<p>The ticket that is logged in Revelation helpdesk will look similar to this</p>
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Step6 - Advanced.png"  width="400">
+
+#### Trigger scenario
+A common scenario for using triggers would be to alert a team or manager when a ticket is due or at risk.
 
 ## Known issues and limitations
 

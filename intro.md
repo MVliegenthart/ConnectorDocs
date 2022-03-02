@@ -1,20 +1,20 @@
-Revelation helpdesk is a web-based helpdesk application available in cloud and on premise. This connector allows you to create and update items in your Revelation helpdesk ticketing system such as tickets, clients, users and assets by connecting to the Revelation helpdesk API using OAuth authentication. 
+Revelation helpdesk is a web-based helpdesk ticketing application available in cloud and on-premise. This connector allows you to create and update items in your Revelation helpdesk ticketing system such as tickets, clients, users and assets by connecting to the Revelation helpdesk API using OAuth authentication. 
 New Tickets can be logged, action notes added and you can reassign or change the priority / status of existing tickets. You can also take advantage of the extensive list of triggers allowing you to integrate your business processes based on events that occur in Revelation helpdesk.
 
 
 ## Prerequisites
 
-You will need a Revelation helpdesk account in order to use this connector. If you are not yet signed up for Revelation helpdesk you can [get a free 30 trial here] (https://revelationhelpdesk.com/prime-free-trial#form)
+You will need a Revelation helpdesk account in order to use this connector. If you are not yet signed up for Revelation helpdesk you can [get a free 30 day trial here.](https://revelationhelpdesk.com/prime-free-trial#form)
 
 ## How to get credentials
 
 To use the connector you will need the URL to your Revelation helpdesk instance and you will need a Super Admin account.
-If you have signed up for a Trial the URL will be 'https://trial.revelationhelpdesk.com' and your username will be the email address you used to sign up. You will be promped to change your default password the first time you sign in to your trial account.
+If you have signed up for a Trial the URL will be 'https://trial.revelationhelpdesk.com' and your username will be the email address you used to sign up with. You will be promped to change your default password the first time you sign in to your trial account through the web interface.
   
 
-## Get started with your connector
+## Getting started
 
-<p>To start using the Revelation helpdesk connector create a new Flow and add an action. Then search for "Revelation helpdesk" and select any of the available actions. </p>
+<p>To start using the Revelation helpdesk connector create a new flow and add a new step. Then search for "Revelation helpdesk" and select any of the available actions. </p>
 <img src="http://revelationhelpdesk.com/images/api/screenshots/Step1 - Choose action.png"  width="400">
 
 #### Connect to Revelation helpdesk
@@ -24,8 +24,7 @@ If you have signed up for a Trial the URL will be 'https://trial.revelationhelpd
 
 
 <p>After you enter your Revelation helpdesk URL click 'Sign In' and you will see a popup login form. Enter your Revelation URL again and your Revelation username and password.</p>
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Step3 - Auth.png" width="400">
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Step4 - Login.png" width="400">
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Auth Combined.png" width="600">
 
 <p>Once you have signed in successfully you will be able to interact with the chosen action.</p>
 
@@ -45,11 +44,17 @@ Next we will use the "Add an Action" action to add a note to the newly logged ti
 <img src="http://revelationhelpdesk.com/images/api/screenshots/Step6 - Advanced.png"  width="400">
 
 #### Trigger scenario
-A common scenario for using triggers would be to alert a team or manager when a ticket is due or at risk.
+<p>A common scenario for using triggers would be to alert a team or manager when a ticket is due or at risk. In the following example we've added the "When a Ticket is Due" trigger which would start the flow as soon as any open ticket reaches its due date.
+
+A conditional step has been added to check the Department name for the ticket, if it is for HR it will continue, if not it will terminate the flow. This is just an example of the type of logic statements that can occur based on ticket data.
+
+Finally the last step is set to post a new message in a Teams Channel which includes a message that the ticket is due and also includes the Ticket # and Ticket description in the message body</p>
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Trigger - ticket due.png"  width="800">
+
 
 ## Known issues and limitations
 
-* Actions and Trigger names in the connector don't reflect the phrases configured in Revelation helpdesk. The parameter names for all the actions and triggers will however reflect the custom phrases setup in Revelation helpdesk. For example the word "Ticket" can be changed to "Issue" but the action name "Log a new Ticket" won't change, however the first parameter in that action is "Client" which will be phrased correctly. 
+* Actions and Trigger names in the connector don't reflect the phrases configured in Revelation helpdesk however, the field names for all the actions and triggers will reflect the custom phrases. For example the word "Ticket" can be changed to "Issue" but the action name "Log a new Ticket" won't change. The field names in that action like "Client", "Project" and "End User" will be updated dynamically based on your Revelation helpdesk phrase configuration. 
 * This connector only support Revelation helpdesk V22.3 (Cloud) and Revelation server 2022 (On-Premise). There are further requirements in order to use the connector with the on-premise version of Revelation helpdesk. 
 
 ## Common errors and remedies

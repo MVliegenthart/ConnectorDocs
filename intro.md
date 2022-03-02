@@ -30,7 +30,7 @@ If you have signed up for a Trial the URL will be 'https://trial.revelationhelpd
 
 #### Log a new Ticket
 Here is a simple example of how to log a new ticket using the 'Log a new Ticket' action. Simply select the Client, Project, End User, enter a Ticket description and choose a ticket status. When the flow runs it will create a new ticket for this end user and assign it to the selected project.</p>
-<img src="http://revelationhelpdesk.com/images/api/screenshots/Step5 - LogATicket.png" width="400">
+<img src="http://revelationhelpdesk.com/images/api/screenshots/Step5 - LogATicket.png?v2" width="400">
 
 #### Advanced ticket logging
 <p>Here is an advanced scenario where we log a new ticket from an email. When a new email arrives it will trigger the flow and use the 'Find a user' action to find the user in Revelation helpdesk by the email's FROM address. 
@@ -57,10 +57,7 @@ Finally the last step is set to post a new message in a Teams Channel which incl
 * Actions and Trigger names in the connector don't reflect the phrases configured in Revelation helpdesk however, the field names for all the actions and triggers will reflect the custom phrases. For example the word "Ticket" can be changed to "Issue" but the action name "Log a new Ticket" won't change. The field names in that action like "Client", "Project" and "End User" will be updated dynamically based on your Revelation helpdesk phrase configuration. 
 * This connector only support Revelation helpdesk V22.3 (Cloud) and Revelation server 2022 (On-Premise). There are further requirements in order to use the connector with the on-premise version of Revelation helpdesk. 
 
-## Common errors and remedies
+## Support
 
-Highlight any errors that might commonly occur when using the connector (such as HTTP status code errors), and what the user should do to resolve the error.
+For further assistence or support please contact support@revelationhelpdesk.com
 
-## FAQ
-
-Provide a breakdown of frequently asked questions and their respective answers here. This can cover FAQs about interacting with the underlying service or about the connector itself.

@@ -1,4 +1,4 @@
-Revelation helpdesk is a web-based helpdesk ticketing application available in cloud and on-premise. This connector allows you to create and update items in your Revelation helpdesk ticketing system such as tickets, clients, users and assets by connecting to the Revelation helpdesk API using OAuth authentication. 
+Revelation helpdesk is a web-based helpdesk ticketing application available as a cloud hosted solution or as an on-premises platform. This connector allows you to create and update items in your Revelation helpdesk ticketing system such as tickets, clients, users and assets by connecting to the Revelation helpdesk API using OAuth authentication. 
 New Tickets can be logged, action notes added and you can reassign or change the priority / status of existing tickets. You can also take advantage of the extensive list of triggers allowing you to integrate your business processes based on events that occur in Revelation helpdesk.
 
 
@@ -6,10 +6,11 @@ New Tickets can be logged, action notes added and you can reassign or change the
 
 You will need a Revelation helpdesk account in order to use this connector. If you are not yet signed up for Revelation helpdesk you can [get a free 30 day trial here.](https://revelationhelpdesk.com/prime-free-trial#form)
 
+
 ## How to get credentials
 
-To use the connector you will need the URL to your Revelation helpdesk instance and you will need a Super Admin account.
-If you have signed up for a Trial the URL will be 'https://trial.revelationhelpdesk.com' and your username will be the email address you used to sign up with. You will be promped to change your default password the first time you sign in to your trial account through the web interface.
+To use the connector you will need the URL to your Revelation helpdesk instance and you will need a super admin account.
+If you have signed up for a Trial the URL will be 'https://trial.revelationhelpdesk.com' and your super admin username will be the email address you used to sign up with. You will be promped to change your default password the first time you sign in to your trial account through the web interface.
   
 
 ## Getting started
@@ -59,5 +60,5 @@ Finally the last step is set to post a new message in a Teams Channel which incl
 
 ## Support
 
-For further assistence or support please contact support@revelationhelpdesk.com
+Please see [our help guide](https://revelationhelpdesk.com/help/v21/cloud) for more details on Revelation helpdesk functionality or for further assistence and support please contact support@revelationhelpdesk.com
 

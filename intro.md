@@ -16,11 +16,11 @@ If you have signed up for a Trial the URL will be 'https://trial.revelationhelpd
 ## Getting started
 
 <p>To start using the Revelation helpdesk connector create a new flow and add a new step. Then search for "Revelation helpdesk" and select any of the available actions. </p>
-![Step1ChooseAction](http://revelationhelpdesk.com/images/api/screenshots/Step1 - Choose action.png)
+![Step1ChooseAction]('http://revelationhelpdesk.com/images/api/screenshots/Step1 - Choose action.png')
 
-[Step1ChooseAction](http://revelationhelpdesk.com/images/api/screenshots/Step1 - Choose action.png)
+[Step1ChooseAction]("http://revelationhelpdesk.com/images/api/screenshots/Step1 - Choose action.png")
 
-[Step1ChooseAction](http://revelationhelpdesk.com/images/api/screenshots/Step1-Chooseaction.png)
+[Step1ChooseAction]("http://revelationhelpdesk.com/images/api/screenshots/Step1-Chooseaction.png")
 
 #### Connect to Revelation helpdesk
 

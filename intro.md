@@ -22,15 +22,18 @@ To start using the Revelation helpdesk connector create a new flow and add a new
 #### Connect to Revelation helpdesk
 
 The first step when adding a new action or trigger is to create a connection to your instance of Revelation helpdesk. When prompted, enter your Revelation helpdesk URL and make sure to enter a secure URL (HTTPS://) and the url does not end with '/'
+
 ![StepConnect](https://revelationhelpdesk.com/images/api/screenshots/Step1-Choose-action.png)
 
-After you enter your Revelation helpdesk URL click 'Sign In' and you will see a popup login form. Enter your Revelation URL again and your Revelation username and password.
+<p>After you enter your Revelation helpdesk URL click 'Sign In' and you will see a popup login form. Enter your Revelation URL again and your Revelation username and password.</p>
+
 ![StepAuth](https://revelationhelpdesk.com/images/api/screenshots/Auth-Combined.png)
 
 <p>Once you have signed in successfully you will be able to interact with the chosen action.</p>
 
 #### Log a new Ticket
-Here is a simple example of how to log a new ticket using the 'Log a new Ticket' action. Simply select the Client, Project, End User, enter a Ticket description and choose a ticket status. When the flow runs it will create a new ticket for this end user and assign it to the selected project.
+<p>Here is a simple example of how to log a new ticket using the 'Log a new Ticket' action. Simply select the Client, Project, End User, enter a Ticket description and choose a ticket status. When the flow runs it will create a new ticket for this end user and assign it to the selected project.</p>
+
 ![StepLog](https://revelationhelpdesk.com/images/api/screenshots/Step5-LogATicket.png)
 
 #### Advanced ticket logging
@@ -42,6 +45,7 @@ Next we will use the "Add an Action" action to add a note to the newly logged ti
 ![AdvancedLog](https://revelationhelpdesk.com/images/api/screenshots/Advanced-logATicket.png)
 
 <p>The ticket that is logged in Revelation helpdesk will look similar to this</p>
+
 ![StepAdvanced](https://revelationhelpdesk.com/images/api/screenshots/Step6-Advanced.png)
 
 #### Trigger scenario

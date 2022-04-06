@@ -20,8 +20,8 @@ If you have signed up for a Trial the URL will be 'https://trial.revelationhelpd
 [Step1ChooseAction](http://revelationhelpdesk.com/images/api/screenshots/Step1 - Choose action.png)
 
 [Step1ChooseAction]("http://revelationhelpdesk.com/images/api/screenshots/Step1 - Choose action.png")
-
-![Step1ChooseAction]("http://revelationhelpdesk.com/images/api/screenshots/Step1-Choose-action.png")
+[Step1ChooseAction](http://revelationhelpdesk.com/images/api/screenshots/Step1-Choose-action.png)
+![Step1ChooseAction](http://revelationhelpdesk.com/images/api/screenshots/Step1-Choose-action.png)
 
 #### Connect to Revelation helpdesk
 

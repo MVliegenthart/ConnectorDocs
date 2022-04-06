@@ -23,7 +23,7 @@ To start using the Revelation helpdesk connector create a new flow and add a new
 
 The first step when adding a new action or trigger is to create a connection to your instance of Revelation helpdesk. When prompted, enter your Revelation helpdesk URL and make sure to enter a secure URL (HTTPS://) and the url does not end with '/'
 
-![StepConnect](https://revelationhelpdesk.com/images/api/screenshots/Step1-Choose-action.png)
+![StepConnect](https://revelationhelpdesk.com/images/api/screenshots/Step2-Connect.png)
 
 <p>After you enter your Revelation helpdesk URL click 'Sign In' and you will see a popup login form. Enter your Revelation URL again and your Revelation username and password.</p>
 
